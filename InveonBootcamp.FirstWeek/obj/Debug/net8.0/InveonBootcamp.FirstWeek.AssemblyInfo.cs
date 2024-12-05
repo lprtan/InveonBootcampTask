@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InveonBootcamp.FirstWeek")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95717bd778e5013cf90b964981a284c62bf1fa2c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c68e8e40b48573c600e6c60ddcc4cc26829e9c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("InveonBootcamp.FirstWeek")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InveonBootcamp.FirstWeek")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

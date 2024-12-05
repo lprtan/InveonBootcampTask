@@ -1,4 +1,6 @@
 ﻿
+using InveonBootcamp.FirstWeek.DependencyInversionPrinciple.DipCorrectApp;
+using InveonBootcamp.FirstWeek.DependencyInversionPrinciple.DipWrongApp;
 using InveonBootcamp.FirstWeek.InterfaceSegregationPrinciple.IspCorrectApp;
 using InveonBootcamp.FirstWeek.InterfaceSegregationPrinciple.IspWrongApp;
 using InveonBootcamp.FirstWeek.LiskovSubstitutionPrinciple.LspCorrectApp;
@@ -42,9 +44,9 @@ IAccount regularAccount = new RegularAccount();
 IAccount salaryAccount = new SalaryAccount();
 IAccount childSavingAccount = new ChildSavingsAccount();
 
-Console.WriteLine($"Regular Account: {regularAccount.CalculateInterest(1000).ToString()}");
-Console.WriteLine($"Salary Account: {salaryAccount.CalculateInterest(1000).ToString()}");
-Console.WriteLine($"Child Saving Account: {childSavingAccount.CalculateInterest(1000).ToString()}");
+Console.WriteLine($"Regular Account: {regularAccount.CalculateInterest(1000)}");
+Console.WriteLine($"Salary Account: {salaryAccount.CalculateInterest(1000)}");
+Console.WriteLine($"Child Saving Account: {childSavingAccount.CalculateInterest(1000)}");
 #endregion
 
 #region Yanlış kod uygulması (LSP)
@@ -90,6 +92,20 @@ humanWorkerFixed.Work();
 
 RobotWorkerFixed robotWorkerFixed = new RobotWorkerFixed();
 robotWorkerFixed.Work();
+#endregion
+
+#region Yanlış kod uygulması (DIP)
+EmployeeDetails employeeDetails = new EmployeeDetails();
+employeeDetails.HoursWorked = 10;
+employeeDetails.HourlyRate = 250;
+Console.WriteLine($"Toplam ödeme: {employeeDetails.GetSalary()}");
+#endregion
+
+#region DIP ile düzeltilmiş kod
+var employeeDetailsFixed = new EmployeeDetailsFixed(new SalaryCalculateFixed());
+employeeDetailsFixed.HourlyRate = 50;
+employeeDetailsFixed.HoursWorked = 150;
+Console.WriteLine($"Toplam ödeme: {employeeDetailsFixed.GetSalary()}");
 #endregion
 
 Console.ReadKey();
