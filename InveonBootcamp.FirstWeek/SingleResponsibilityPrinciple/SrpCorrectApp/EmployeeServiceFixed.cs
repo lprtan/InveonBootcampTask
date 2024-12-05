@@ -9,6 +9,10 @@ namespace InveonBootcamp.FirstWeek.SingleResponsibilityPrinciple.SrpCorrectApp
 {
     public class EmployeeServiceFixed
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+
         private IMediator _mediator;
 
         public void SetMediator(IMediator mediator)
@@ -16,7 +20,7 @@ namespace InveonBootcamp.FirstWeek.SingleResponsibilityPrinciple.SrpCorrectApp
             _mediator = mediator;
         }
 
-        public void SaveEmployee(Employee employee)
+        public void SaveEmployee(EmployeeServiceFixed employee)
         {
             EmployeDataFixed.Employees.Add(employee);
 

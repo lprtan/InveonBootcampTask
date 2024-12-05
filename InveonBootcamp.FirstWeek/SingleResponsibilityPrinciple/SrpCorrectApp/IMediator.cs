@@ -8,6 +8,6 @@ namespace InveonBootcamp.FirstWeek.SingleResponsibilityPrinciple.SrpCorrectApp
 {
     public interface IMediator
     {
-        void Notify(string action, Employee employee);
+        void Notify(string action, EmployeeServiceFixed employee);
     }
 }

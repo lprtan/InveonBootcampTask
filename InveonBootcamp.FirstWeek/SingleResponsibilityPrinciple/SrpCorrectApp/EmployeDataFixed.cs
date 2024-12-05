@@ -8,6 +8,6 @@ namespace InveonBootcamp.FirstWeek.SingleResponsibilityPrinciple.SrpCorrectApp
 {
     public class EmployeDataFixed
     {
-        public static List<Employee> Employees { get; set; } = new List<Employee>();
+        public static List<EmployeeServiceFixed> Employees { get; set; } = new List<EmployeeServiceFixed>();
     }
 }

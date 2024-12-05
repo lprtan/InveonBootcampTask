@@ -18,7 +18,7 @@ var employeeService2 = new EmployeeServiceFixed();
 
 var mediator = new Mediator(employeeService2, emailService);
 
-var employee = new Employee
+var employee = new EmployeeServiceFixed
 {
     FirstName = "Ali",
     LastName = "Veli",
@@ -26,4 +26,6 @@ var employee = new Employee
 };
 employeeService2.SaveEmployee(employee);
 #endregion
+
+
 Console.ReadKey();

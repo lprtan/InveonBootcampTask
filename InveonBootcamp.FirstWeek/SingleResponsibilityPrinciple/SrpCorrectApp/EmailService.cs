@@ -8,7 +8,7 @@ namespace InveonBootcamp.FirstWeek.SingleResponsibilityPrinciple.SrpCorrectApp
 {
     public class EmailService
     {
-        public void SendEmail(Employee employee)
+        public void SendEmail(EmployeeServiceFixed employee)
         {
             Console.WriteLine($"{employee.Email} mail gönderildi");
         }

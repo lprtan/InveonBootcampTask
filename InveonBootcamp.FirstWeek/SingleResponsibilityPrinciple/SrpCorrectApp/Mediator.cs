@@ -18,7 +18,7 @@ namespace InveonBootcamp.FirstWeek.SingleResponsibilityPrinciple.SrpCorrectApp
 
             _emailService = emailService;
         }
-        public void Notify(string action, Employee employee)
+        public void Notify(string action, EmployeeServiceFixed employee)
         {
             if (action == "EmployeeSaved")
             {
