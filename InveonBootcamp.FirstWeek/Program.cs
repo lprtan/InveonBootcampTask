@@ -1,10 +1,12 @@
 ﻿
+using InveonBootcamp.FirstWeek.LiskovSubstitutionPrinciple.LspCorrectApp;
+using InveonBootcamp.FirstWeek.LiskovSubstitutionPrinciple.LspWrongApp;
 using InveonBootcamp.FirstWeek.OpenClosedPrinciple.OcpCorrectApp;
 using InveonBootcamp.FirstWeek.OpenClosedPrinciple.OcpWrongApp;
 using InveonBootcamp.FirstWeek.SingleResponsibilityPrinciple.SrpCorrectApp;
 using InveonBootcamp.FirstWeek.SingleResponsibilityPrinciple.SrpWrongApp;
 
-#region Yanlış kod uygulaması
+#region Yanlış kod uygulaması (SRP)
 EmployeeService employeeService = new EmployeeService
 {
     FirstName = "Ali",
@@ -29,7 +31,7 @@ var employee = new EmployeeServiceFixed
 employeeService2.SaveEmployee(employee);
 #endregion
 
-#region Yanlış kod uygulması
+#region Yanlış kod uygulması (OCP)
 Console.WriteLine(Account.CalculateInterest(AccountType.Salary, 1000));
 #endregion
 
@@ -43,5 +45,27 @@ Console.WriteLine($"Salary Account: {salaryAccount.CalculateInterest(1000).ToStr
 Console.WriteLine($"Child Saving Account: {childSavingAccount.CalculateInterest(1000).ToString()}");
 #endregion
 
+#region Yanlış kod uygulması (LSP)
+AccessDataFile adminFile = new AdminUserFile();
+adminFile.FilePath = @"c:\temp\a.txt";
+adminFile.ReadFile();
+adminFile.WriteFile();
+
+AccessDataFile regularFile = new RegularFileUser();
+regularFile.FilePath = @"c:\temp\a.txt";
+regularFile.ReadFile();
+//accessDataFileR.WriteFile();  // Throws exception
+#endregion
+
+#region LSP ile düzeltilmiş kod uygulaması
+IFileReader adminFileReader = new AdminFileUserFixed();
+adminFileReader.ReadFile(@"c:\temp\a.txt");
+
+IFileWriter adminFileWriter = new AdminFileUserFixed();
+adminFileWriter.FileWrite(@"c:\temp\a.txt");
+
+IFileReader regularFileReader = new RegularFileUserFixed();
+regularFileReader.ReadFile(@"c:\temp\a.txt");
+#endregion
 
 Console.ReadKey();
