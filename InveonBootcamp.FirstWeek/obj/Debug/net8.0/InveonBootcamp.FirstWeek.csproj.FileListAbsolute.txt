@@ -1,0 +1,15 @@
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\bin\Debug\net8.0\InveonBootcamp.FirstWeek.exe
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\bin\Debug\net8.0\InveonBootcamp.FirstWeek.deps.json
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\bin\Debug\net8.0\InveonBootcamp.FirstWeek.runtimeconfig.json
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\bin\Debug\net8.0\InveonBootcamp.FirstWeek.dll
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\bin\Debug\net8.0\InveonBootcamp.FirstWeek.pdb
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\obj\Debug\net8.0\InveonBootcamp.FirstWeek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\obj\Debug\net8.0\InveonBootcamp.FirstWeek.AssemblyInfoInputs.cache
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\obj\Debug\net8.0\InveonBootcamp.FirstWeek.AssemblyInfo.cs
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\obj\Debug\net8.0\InveonBootcamp.FirstWeek.csproj.CoreCompileInputs.cache
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\obj\Debug\net8.0\InveonBootcamp.FirstWeek.sourcelink.json
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\obj\Debug\net8.0\InveonBootcamp.FirstWeek.dll
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\obj\Debug\net8.0\refint\InveonBootcamp.FirstWeek.dll
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\obj\Debug\net8.0\InveonBootcamp.FirstWeek.pdb
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\obj\Debug\net8.0\InveonBootcamp.FirstWeek.genruntimeconfig.cache
+C:\Users\Alperen Tan\source\repos\InveonBootcamp\InveonBootcamp.FirstWeek\obj\Debug\net8.0\ref\InveonBootcamp.FirstWeek.dll
