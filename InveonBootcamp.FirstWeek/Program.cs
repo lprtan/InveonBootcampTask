@@ -1,4 +1,6 @@
 ﻿
+using InveonBootcamp.FirstWeek.InterfaceSegregationPrinciple.IspCorrectApp;
+using InveonBootcamp.FirstWeek.InterfaceSegregationPrinciple.IspWrongApp;
 using InveonBootcamp.FirstWeek.LiskovSubstitutionPrinciple.LspCorrectApp;
 using InveonBootcamp.FirstWeek.LiskovSubstitutionPrinciple.LspWrongApp;
 using InveonBootcamp.FirstWeek.OpenClosedPrinciple.OcpCorrectApp;
@@ -66,6 +68,28 @@ adminFileWriter.FileWrite(@"c:\temp\a.txt");
 
 IFileReader regularFileReader = new RegularFileUserFixed();
 regularFileReader.ReadFile(@"c:\temp\a.txt");
+#endregion
+
+#region Yanlış kod uygulması (ISP)
+Iworker humanWorker = new HumanWorker();
+humanWorker.Eat();
+humanWorker.Sleep();
+humanWorker.Work();
+
+Iworker robotWorker = new RobotWorker();
+//robotWorker.Eat(); //Throws exception
+//robotWorker.Sleep(); //Throws exception
+robotWorker.Work();
+#endregion
+
+#region ISP ile düzeltilmiş kod uygulması
+HumanWorkerFixed humanWorkerFixed = new HumanWorkerFixed();
+humanWorkerFixed.Eat();
+humanWorkerFixed.Sleep();
+humanWorkerFixed.Work();
+
+RobotWorkerFixed robotWorkerFixed = new RobotWorkerFixed();
+robotWorkerFixed.Work();
 #endregion
 
 Console.ReadKey();
