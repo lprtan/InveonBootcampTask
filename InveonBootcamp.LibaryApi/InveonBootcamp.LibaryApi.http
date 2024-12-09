@@ -1,0 +1,6 @@
+@InveonBootcamp.LibaryApi_HostAddress = http://localhost:5236
+
+GET {{InveonBootcamp.LibaryApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
