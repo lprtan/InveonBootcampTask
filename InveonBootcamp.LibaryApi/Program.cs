@@ -7,8 +7,10 @@ using InveonBootcamp.LibaryApi.Models.Repositories.Concrete;
 using InveonBootcamp.LibaryApi.Models.Repositories.Context;
 using InveonBootcamp.LibaryApi.Models.Services.Abstract;
 using InveonBootcamp.LibaryApi.Models.Services.Concrete;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using StackExchange.Redis;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +31,28 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IRedisCacheService, RedisCacheService>();
 
 var app = builder.Build();
+
+app.UseExceptionHandler(error =>
+{
+    error.Run(async context =>
+    {
+        context.Response.StatusCode = 500;
+        context.Response.ContentType = "application/json";
+
+        var execption = context.Features.Get<IExceptionHandlerFeature>()?.Error;
+
+        if (execption != null)
+        {
+            var response = new
+            {
+                message = "Bilinmyene bir hata oluþtur tekrar deneyiniz",
+                details = app.Environment.IsDevelopment() ? execption.Message : null
+            };
+
+            await context.Response.WriteAsJsonAsync(response);
+        }
+    });
+});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

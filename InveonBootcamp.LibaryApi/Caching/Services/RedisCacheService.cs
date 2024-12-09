@@ -35,7 +35,7 @@ namespace InveonBootcamp.LibaryApi.Caching.Services
             return await _cache.StringGetAsync(key);
         }
 
-        public async Task<bool> SetValueAsync(string key, bool value)
+        public async Task<bool> SetValueAsync(string key, string value)
         {
             return await _cache.StringSetAsync(key, value, TimeSpan.FromHours(1));
         }
