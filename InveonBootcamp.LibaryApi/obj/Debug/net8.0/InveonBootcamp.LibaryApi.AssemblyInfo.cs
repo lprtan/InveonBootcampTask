@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InveonBootcamp.LibaryApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66e46f62631f46cb2fccd376dce22bda1fe556e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+488275125c3298ca6ac0a15f0acc95a94bed08ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("InveonBootcamp.LibaryApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InveonBootcamp.LibaryApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
