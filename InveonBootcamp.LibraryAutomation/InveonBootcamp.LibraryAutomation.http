@@ -1,6 +1,0 @@
-@InveonBootcamp.LibraryAutomation_HostAddress = http://localhost:5294
-
-GET {{InveonBootcamp.LibraryAutomation_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
