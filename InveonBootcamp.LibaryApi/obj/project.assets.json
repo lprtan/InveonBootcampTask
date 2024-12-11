@@ -5300,11 +5300,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alperen Tan\\source\\repos\\InveonBootcamp\\InveonBootcamp.LibaryApi\\InveonBootcamp.LibaryApi.csproj",
+      "projectUniqueName": "C:\\Users\\Alperen Tan\\Source\\Repos\\InveonBootcampTask\\InveonBootcamp.LibaryApi\\InveonBootcamp.LibaryApi.csproj",
       "projectName": "InveonBootcamp.LibaryApi",
-      "projectPath": "C:\\Users\\Alperen Tan\\source\\repos\\InveonBootcamp\\InveonBootcamp.LibaryApi\\InveonBootcamp.LibaryApi.csproj",
+      "projectPath": "C:\\Users\\Alperen Tan\\Source\\Repos\\InveonBootcampTask\\InveonBootcamp.LibaryApi\\InveonBootcamp.LibaryApi.csproj",
       "packagesPath": "C:\\Users\\Alperen Tan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alperen Tan\\source\\repos\\InveonBootcamp\\InveonBootcamp.LibaryApi\\obj\\",
+      "outputPath": "C:\\Users\\Alperen Tan\\Source\\Repos\\InveonBootcampTask\\InveonBootcamp.LibaryApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

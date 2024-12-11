@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IveonBootcamp.Asynchronous")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d2f82ae12381cdff81ad3da824a7d2faf1b38da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bd4bcca58ac6b06dd01ac3ec78920c3aff7de63")]
 [assembly: System.Reflection.AssemblyProductAttribute("IveonBootcamp.Asynchronous")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IveonBootcamp.Asynchronous")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
